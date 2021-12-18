@@ -1,4 +1,5 @@
 import csv
+import pandas
 
 # Author: Larry Tao
 # Date: 10/13/21
@@ -66,3 +67,4 @@ print(longest)
 
 # finding how many chinstraps are on Dream Island
 print(dict["Chinstrap"]["Dream"])
+
