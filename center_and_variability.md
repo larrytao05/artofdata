@@ -97,7 +97,7 @@ Shown below is a **box plot** of Gentoo bill lengths.
 
 2. What percentage of the dataset is represented by the **box**?
 
-- 25%
+- middle 50%
 
 3. What is an **interquartile range (IQR)**?
 
@@ -106,9 +106,13 @@ Shown below is a **box plot** of Gentoo bill lengths.
 4. Any observation that is `1.5*IQR` below Q1 or above Q3 is marked as a _potential_ outlier.
    1. How is this displayed in the box plot? Show the math necessary to determine that datapoint is an outlier.
 
-- 
+- Q3 + Q3/Q1 * 1.5 
+- Q1 - Q3/Q1 * 1.5 
 
    2. The `1.5IQR` rule can give a false positive; that is, a datapoint that is marked as an outlier even when it isn't one. Describe an example where that happens.
+
+- if there are long enough tails and a high concentration in the center, then the tails could be marked as a false positive.
+
 
 Shown below is a **violin plot** for the same data.
 
@@ -124,9 +128,18 @@ Shown below is a **violin plot** for the same data.
 ### Deviation
 1. What is a datapoint's **deviation** in relation to the dataset mean?
 
-- 
+- how far it is from the median
 
 2. What is a dataset's **standard deviation**?
+
+- how far is each point from the median on average?
+
 3. What is the standard deviation of Gentoo bill lengths?
+
+
+
 4. What is an observation's **z-score**, and how is that related to a dataset's standard deviation?
+
+It tells you how many standard deviations you are away from the median
+
 5. Why might **z-score** be a better measure than deviation?
